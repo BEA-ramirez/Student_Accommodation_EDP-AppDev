@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StudentAccommodationPortal.Accommodation">
+    <Position X="3.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAAAgAAAAAAAACIACAAAAEAACAAAAAAAACIA=</HashCode>
+      <FileName>Accommodation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AccommodationType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Amenities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="StudentAccommodationPortal.Amenity">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Amenity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AmenityType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="StudentAccommodationPortal.Review">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAABAAAAAgAAAAAAAAAIAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentAccommodationPortal.Room">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <AssociationLine Name="Accommodation" Type="StudentAccommodationPortal.Accommodation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="1.53" />
+        <Point X="7.083" Y="1.53" Type="JumpStart" />
+        <Point X="6.917" Y="1.53" Type="JumpEnd" />
+        <Point X="6.588" Y="1.53" />
+        <Point X="6.588" Y="1.672" />
+        <Point X="5.75" Y="1.672" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAACAFAAAQAgAAAAAAAAAIAAAAAAAAAAAAAAAIACAAA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Accommodation" />
+      <Property Name="RoomType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Reviews" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="StudentAccommodationPortal.User">
+    <Position X="3.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAANAAACQEBAAAAQAAAAAAAAAAAAACAAEAAAAAAAg=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="StudentAccommodationPortal.AccommodationType">
+    <Position X="0.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAYAQAAAAAA=</HashCode>
+      <FileName>AccommodationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StudentAccommodationPortal.AmenityType">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAgAAAAAGAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AmenityType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StudentAccommodationPortal.RoomType">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAACAAAACAAAAAAEAAAEAAAA=</HashCode>
+      <FileName>RoomType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
